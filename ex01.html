@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS partie 2</title>
+        <meta charset="utf-8"/>
+        <script>
+            function calculSurface(){
+                var lon = parseInt(prompt("Longueur"));
+                var large  = parseInt(prompt("Largeur"));
+                var calcul = lon*large;
+                alert(calcul);
+                calcul = document.getElementById("calcSur").value;
+               
+            }
+            
+            function calculPeri(){
+                var lon = parseInt(prompt("Longueur"));
+                var large  = parseInt(prompt("Largeur"));
+                var calcul = lon + lon + large + large;
+                alert(calcul);
+                calcul = document.getElementById("calcSur").value;
+               
+            }
+        </script>
+    </head>
+    <body>
+        <h1>EX01</h1>
+        <form>
+            <label>Calcul de la surface:</label><br><input type="button" value="Surface" name="susu" id="calcSur" onclick="calculSurface();"><br><br>
+            <label>Calcul de la perimetre:</label><br><input type="button" value="perimetre" name="susu" id="calcPer" onclick="calculPeri();">
+        <form>
+    </body>
+</html>
