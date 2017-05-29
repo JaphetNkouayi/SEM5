@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_5</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+        	function deuxNombre(){
+        		alert("hello!");
+        	var nombreUn = parseInt(document.getElementById('premierNombre').value);
+        	var nombreDeux = parseInt(document.getElementById('deuxiemeNombre').value);
+            alert("Premier nombre :" + nombreUn + "\n" + " Deuxième nombre :" + nombreDeux);
+        	}
+        </script>
+    </head>
+    <body>
+        <form>
+            <label for="premier_nombre">Premier nombre : </label><br/><input placeholder="entre 1 et 30" type="number" id="premierNombre" min="1" max="30"/><br/>
+            <label for="deuxieme_nombre">Deuxième nombre : </label><br/><input placeholder="1 - 50" type="number" id="deuxiemeNombre" min="1" max="50" /><br/>
+            <button  id="valider" name ="valider" onclick="deuxNombre();">Valider</button>
+        </form>
+    </body>
+</html>

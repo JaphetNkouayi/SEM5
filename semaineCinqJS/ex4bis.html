@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_4</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+            function Valider(){
+                alert("bonjourjaja");
+              var nom = document.getElementById('Nom').value;
+              var prenom = document.getElementById('monPrenom').value;
+              var age = document.getElementById('Age').value;
+              var ville = document.getElementById('Ville').value;
+              alert("Nom :" + nom + "\n" + "prenom: "  + prenom + "\n" + "age :" + age + "\n" + "ville: " + ville);
+            }
+
+        </script>
+    </head>
+    <body>
+        <form>
+            <p>quel est ton Nom : <input type="text" name="nom" id="Nom"/></p>
+            <p> quel est ton Prénom : <input type="text" name="prenom" id="monPrenom"/></p>
+            <p>tu as quel age : <input type="number" id="Age"/></p>
+            <p>tu habite quelle Ville : <input type="text" id="Ville"/></p>
+             <input type="submit" onclick="Valider();"/>
+        </form>
+    </body>
+</html>

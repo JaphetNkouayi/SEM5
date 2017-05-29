@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javaScript Base 2</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript">
+		
+      function jourDeLaSemaine(){
+     // les noms de jours / mois
+     var jours = new Array("dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi");
+     // on recupere la date
+     var date = new Date();
+
+     // on construit le message
+
+     var message = jours[date.getDay()] + " ";   // nom du jour
+     //message += date.getDate() + " ";   // numero du jour
+     document.getElementById("jourJ").value=message;
+     alert(message);
+   }
+        jourDeLaSemaine();  
+	</script>
+</head>
+<body>
+    <h1>EX8js Part2</h1>
+    <form>
+    	<label>la date aujourd'hui est :</label><input type="button" name="maDate" value="aujourd'hui" id="jourJ" onclick="jourDeLaSemaine();">
+    </form>
+</body>
+</html>
