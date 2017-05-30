@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8"/>
+
+</head>
+<body>
+     <h1>Jeux Feuille, Pierre et Ciseaux</h1>
+      <p>À chaque manche, l'ordinateur et le joueur choisissent chacun un élément parmi pierre, feuille ou ciseaux.
+
+    Le gagnant est celui qui a choisi l'élément le plus fort, sachant que:
+    <ul>
+    <li>ciseaux > feuille (les ciseaux coupent la feuille)</li>
+    <li>pierre > ciseaux (la pierre casse les ciseaux)</li>
+    <li>feuille > pierre (la feuille enveloppe la pierre)</li>
+     </ul>
+Si l'ordinateur et le joueur ont choisi le même élément, aucun d'eux n'emporte. </p>
+
+  <p> <h2>Exemple de déroulement d'une manche</h2>
+
+    l'ordinateur choisit secrètement pierre (parmi les trois valeurs d'éléments possibles);
+    le joueur est invité à saisir son choix => il tape feuille;
+    l'ordinateur affiche feuille car c'est l'élément qui l'emporte (la feuille enveloppe la pierre).
+
+<h2>Phase 1: Implémentation d'une manche</h2>
+
+<h2>Pour implémenter le code d'une manche, nous allons:</h2>
+
+    définir une fonction comparer(choix1, choix2) qui renvoie le nom de l'élément gagnant, entre les deux passés en paramètres;
+    appeler cette fonction, en passant les choix de l'ordinateur et du joueur en paramètres, afin de savoir lequel des deux a remporté la manche.
+
+<h2>voici une proposition d'étapes à suivre:</h2>
+   <ul>
+     <li> Faire les conditions if imbriquées, en fonction de la valeur de deux variables: choix1 et choix2;</li>
+     <li>Chaque condition de dernier niveau va afficher dans la console le nom de l'élément qui remporte la manche;</li>
+     <li>Transférer ces conditions dans la définition d'une fonction comparer(choix1, choix2) qui retourne le nom de l'élément gagnant à </li><li>l'aide de return (au lieu de l'afficher dans la console), parmi les deux passés en paramètres;</li>
+    <li>Tester cette fonction en lui passant chaque combinaison possible de valeurs du jeu en paramètres;</li>
+    <li>En dehors de la définition de la fonction, créer les variables choixOrdi et choixUtilisateur;
+    <li>Faire en sorte que choixOrdi ait pour valeur un des trois éléments, choisi de manière aléatoire, et que choixUtilisateur soit <li>saisi par l'utilisateur à l'aide de prompt();</li>
+    <li>Appeler la fonction comparer(), puis afficher dans la console la valeur de son résultat (l'élément qui remporte la manche), à </li>partir des choix de l'ordinateur et du joueur.</li>
+  </ul>
+  </p>
+</body>
+</html>
