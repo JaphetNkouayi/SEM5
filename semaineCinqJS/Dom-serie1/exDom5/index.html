@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 5</title>
+  </head>
+  <body>
+    <div class="conteneur" >
+      <img onmouseover = "cacherImg(this);"  src="image1.jpg" id="image1"/>
+      <img onmouseover = "cacherImg(this);"  src="image2.jpg" id="image2" />
+      <img onmouseover = "cacherImg(this);"  src="image3.jpg" id="image3" />
+      <img onmouseover = "cacherImg(this);"  src="image4.jpg" id="image4" />
+      <img onmouseover = "cacherImg(this);"  src="image5.jpg" id="image5" />
+    </div>
+  <script type="text/javascript">
+       function cacherImg(ref){
+          ref.src = ""+ ref.id + "_2.jpg";
+       }
+         
+  </script>  
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 2</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" onBlur="perdreFocus();" />
+  </form>
+  <!--<p>Merci de votre participation</p>-->
+  <script type="text/javascript">
+  
+  	function perdreFocus(){
+  		var saisi = document.getElementById('nom').innerHTML;
+  		saisi.value = alert("Merci de votre participation");
+  	}
+
+  </script>
+</body>
+</html>
