@@ -4,7 +4,6 @@
 <head>
 	<title></title>
 	<meta charset="utf-8"/>
-
 </head>
 <body>
      <h1>Jeux Feuille, Pierre et Ciseaux</h1>
@@ -42,5 +41,55 @@ Si l'ordinateur et le joueur ont choisi le même élément, aucun d'eux n'emport
     <li>Appeler la fonction comparer(), puis afficher dans la console la valeur de son résultat (l'élément qui remporte la manche), à </li>partir des choix de l'ordinateur et du joueur.</li>
   </ul>
   </p>
+<script type="text/javascript">
+	do{
+	var choixUtilisateur = prompt("entre 1 et 3(1:papier,2:ciseaux,3:pierre"));
+       var	choixPc = parseInt(Math.random()*4); 
+       if( choixPc == 1){
+          console.log("pc:1->papier");
+       }
+       else if(choixPc==2){
+       	console.log("pc->ciseaux");
+       }
+       else if (choixPc =3) {
+       	console.log("pc->pierre");
+       }
+    }
+    while(!(choixUtilisateur >= 1 && choixUtilisateur < 4));
+     function jeuAleatoire(choixUser,choixDuPc){
+     	
+        if(choixUser ==="ciseaux" && choixDuPc==3){
+     		console.log("La Pierre l'emporte Tu as Gagne");
+     	}else
+        if (choixUser ==="feuille" && choixDuPc==2) {
+        	console.log("les ciseaux coupent la feuille Tu as Perdu");
+        }
+        else if(choixUser==="pierre" && choixDuPc==1){
+        	console.log("la feuille enveloppe la pierre tu as perdu");
+        }
+        // deuxieme serie de comparaison
+        
+        else if(choixUser ==="feuille" && choixDuPc==3){
+     		console.log("La Pierre l'emporte Tu as Perdu");
+     	}else
+        if (choixUser ==="ciseaux" && choixDuPc==1) {
+        	console.log("les ciseaux coupent la feuille Tu as gagne");
+        }
+        else if(choixUser==="pierre" && choixDuPc==2){
+        	console.log("la pierre Casse le ciseaux tu as gagne");
+        }  // autres series de possibilites
+       
+       if(choixUser ==="ciseaux" && choixDuPc==2){
+     		console.log("Aucun gagnant");
+     	}else
+        if (choixUser ==="feuille" && choixDuPc==1) {
+        	console.log("Aucun gagnant");
+        }
+        else if(choixUser==="pierre" && choixDuPc==3){
+        	console.log("Aucun gagnant");
+        }
+        
+     }
+</script>  
 </body>
 </html>
